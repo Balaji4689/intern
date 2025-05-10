@@ -1,4 +1,4 @@
-export const API_Path = "http://localhost:2001";
+export const API_Path = "https://intern-backend-5n62.onrender.com";
 
 
 
