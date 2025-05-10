@@ -1,0 +1,329 @@
+body {
+    background-color: #272626;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main-container {
+    height: 96vh;
+    width: 97vw;
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.icon-btn {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.icon-btn:hover {
+    background-color: #e0e0e0;
+}
+
+span{
+    color:white;
+}
+.sidebar-container {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0f0f0f;
+    color: white;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 34px;
+
+  }
+  
+  .sidebar-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-section span{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .sidebar-item span{
+    font-size: 17px;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 20px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 8px;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #1d1d1d;
+    border:1px solid white ;
+
+  }
+  
+  .profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1e1e1e;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+.profile-wrapper span {
+  font-size: 17px; 
+}
+
+
+.content-area {
+  flex: 0.7;
+  background-color: #1e1e1e; 
+  border-radius: 0 20px 20px 0; 
+  padding: 20px;
+  color: white; 
+  box-sizing: border-box;
+  height: 100%; 
+  border-radius: 20px;
+}
+
+.mainarea-container {
+  color: white;
+}
+.dashboard-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dashboard-main-banner {
+  background: linear-gradient(to right, #e0bbff, #f1e4ff);
+  color: #000;
+  padding: 50px;
+  border-radius: 20px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  max-width: 600px;
+}
+
+.banner-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.banner-text h3{
+  font-size: 10px;
+}
+.highlight {
+  color: #5f1bd8;
+  font-weight: bold;
+}
+
+.banner-buttons {
+  margin-top: 15px;
+}
+
+.btn-red {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-red:hover{
+  color:white;
+  background-color: black;
+}
+.btn-dark {
+  background-color: #222;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-dark:hover{
+  background-color: #e63946;
+}
+
+
+.qrscanner-container {
+  color: rgb(235, 9, 9);
+}
+
+.timetable-container {
+  color: white;
+}
+
+
+
+/* time table--------------- */
+.time-table-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 85vh;            
+  overflow-y: auto;        
+  padding-right: 0.5rem; 
+}
+
+.time-table-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.day-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.day-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fefcbf;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.day-button.active {
+  background-color: white;
+  color: black;
+}
+
+.day-heading {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.schedule-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.schedule-card p {
+  margin: 4px 0;
+}
+
+.schedule-time {
+  font-weight: 600;
+}
+
+.schedule-faculty,
+.schedule-subject {
+  font-size: 14px;
+  color: #374151;
+}
+
+
+/* rq code scanner ============== */
+.qrscanner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 500px;
+  max-height: auto;
+  margin: 4rem auto;
+  font-family: 'Segoe UI', sans-serif;
+
+}
+
+.qrscanner-container h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+#qr-reader {
+  width: 100% !important;
+  max-width: 600px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: white;
+}
+
+.qrscanner-container button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.qrscanner-container button:hover {
+  background-color: #1d4ed8;
+}
+
+.qrscanner-container button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.qrscanner-container .scanned-output {
+  margin-top: 1.5rem;
+  background-color: #ecfdf5;
+  border: 1px solid #34d399;
+  color: #065f46;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  word-wrap: break-word;
+}
